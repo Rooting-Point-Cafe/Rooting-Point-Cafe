@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rooting Point Café Menu</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff; /* Keep background white */
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: #b63110;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    text-align: center;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.section {
+    margin: 30px 0;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    transition: transform 0.2s, background-color 0.2s, box-shadow 0.2s;
+}
+
+.item:hover {
+    transform: scale(1.02); /* Slight zoom effect on hover */
+    background-color: #f9f9f9; /* Light gray background on hover */
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow on hover */
+}
+
+.item img {
+    width: 100px;
+    height: auto;
+    margin-right: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.item-details {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.price {
+    font-weight: bold;
+    color: #4CAF50;
+    font-size: 1.2em;
+}
+
+
+    </style>
+</head>
+<body>
+
+    <h1>Rooting Point Café Menu</h1>
+
+    <!-- Drinks Section -->
+    <div class="section" id="drinks">
+        <h2>Drinks</h2>
+        <!-- Example Drink Item -->
+        <div class="item">
+            <img src="img.jpg" alt="Drink 1"> <!-- Add your image source here -->
+            <div class="item-details">
+                <span>Coffee</span>
+                <span class="price">$ 3.00</span>
+            </div>
+        </div>
+        <!-- Add more drink items below -->
+        <div class="item">
+            <img src="img.jpg" alt="Drink 2"> <!-- Add your image source here -->
+            <div class="item-details">
+                <span>Tea</span>
+                <span class="price">$ 2.50</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pizza Section -->
+    <div class="section" id="pizza">
+        <h2>Pizza</h2>
+        <!-- Example Pizza Item -->
+        <div class="item">
+            <img src="img.jpg" alt="Pizza 1"> <!-- Add your image source here -->
+            <div class="item-details">
+                <span>Margherita Pizza</span>
+                <span class="price">$ 8.00</span>
+            </div>
+        </div>
+        <!-- Add more pizza items below -->
+        <div class="item">
+            <img src="img.jpg" alt="Pizza 2"> <!-- Add your image source here -->
+            <div class="item-details">
+                <span>Pepperoni Pizza</span>
+                <span class="price">$ 9.00</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Submarine Section -->
+    <div class="section" id="submarine">
+        <h2>Submarines</h2>
+        <!-- Example Submarine Item -->
+        <div class="item">
+            <img src="img.jpg" alt="Beef Submarine"> <!-- Add your image source here -->
+            <div class="item-details">
+                <span>Beef submarine</span>
+                <span class="price">MVR 75.00</span>
+            </div>
+        </div>
+        <!-- Add more submarine items below -->
+        <div class="item">
+            <img src="img.jpg" alt="Chicken Submarine"> <!-- Add your image source here -->
+            <div class="item-details">
+                <span>Chicken Submarine</span>
+                <span class="price">MVR 70.00</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add more sections below -->
+    <div class="section" id="new-section">
+        <h2>Hedhikaa</h2>
+        <!-- Add items for new section here -->
+        <div class="item">
+            <img src="img.jpg" alt="Bis katulas"> <!-- Add your image source here -->
+            <div class="item-details">
+                <span>Bis katulas</span>
+                <span class="price">MVR 4.00</span>
+            </div>
+        </div>
+        <div class="item">
+            <img src="img.jpg" alt="Cake slice"> <!-- Add your image source here -->
+            <div class="item-details">
+                <span>Cake slice</span>
+                <span class="price">MVR 15.00</span>
+            </div>
+        </div>
+        <div class="item">
+            <img src="img.jpg" alt="Club Sandwich"> <!-- Add your image source here -->
+            <div class="item-details">
+                <span>Club Sandwich</span>
+                <span class="price">MVR 15.00</span>
+            </div>
+        </div>
+        <div class="item">
+            <img src="img.jpg" alt="Foni folhi"> <!-- Add your image source here -->
+            <div class="item-details">
+                <span>Foni folhi</span>
+                <span class="price">MVR 4.00</span>
+            </div>
+        </div>
+        <div class="item">
+            <img src="img.jpg" alt="Gulha"> <!-- Add your image source here -->
+            <div class="item-details">
+                <span>Gulha</span>
+                <span class="price">MVR 4.00</span>
+            </div>
+        </div>
+        <div class="item">
+            <img src="img.jpg" alt="Havaadhulee bis"> <!-- Add your image source here -->
+            <div class="item-details">
+                <span>Havaadhulee bis</span>
+                <span class="price">MVR 4.00</span>
+            </div>
+        </div>
+        <div class="item">
+            <img src="img.jpg" alt="Cream jehi banas"> <!-- Add your image source here -->
+            <div class="item-details">
+                <span>Cream jehi banas</span>
+                <span class="price">MVR 4.00</span>
+            </div>
+        </div>
+        <div class="item">
+            <img src="img.jpg" alt="Kashi baga"> <!-- Add your image source here -->
+            <div class="item-details">
+                <span>Kashi baga</span>
+                <span class="price">MVR 4.00</span>
+            </div>
+        </div>
+        <div class="item">
+            <img src="img.jpg" alt="Mas roshi"> <!-- Add your image source here -->
+            <div class="item-details">
+                <span>Mas roshi</span>
+                <span class="price">MVR 4.00</span>
+            </div>
+        </div>
+        <div class="item">
+            <img src="img.jpg" alt="Half Panino"> <!-- Add your image source here -->
+            <div class="item-details">
+                <span>Half Panino</span>
+                <span class="price">MVR 4.00</span>
+            </div>
+        </div>
+        <div class="item">
+            <img src="img.jpg" alt="Half Submarine"> <!-- Add your image source here -->
+            <div class="item-details">
+                <span>Half Submarine</span>
+                <span class="price">MVR 4.00</span>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
