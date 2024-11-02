@@ -5,68 +5,104 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rooting Point Café Menu</title>
     <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Background and Font Styling */
         body {
-    font-family: Arial, sans-serif;
-    background-color: #ffffff; /* Keep background white */
-    color: #333;
-    margin: 0;
-    padding: 20px;
-}
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
 
-h1 {
-    color: #b63110;
-    font-size: 2.5em;
-    margin-bottom: 10px;
-    text-align: center;
-    border-bottom: 2px solid #ddd;
-    padding-bottom: 10px;
-}
+        /* Title Styling */
+        h1 {
+            color: #2d6a4f;
+            font-size: 3em;
+            margin-bottom: 20px;
+            text-align: center;
+            border-bottom: 3px solid #ddd;
+            padding-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
 
-.section {
-    margin: 30px 0;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    background-color: #fff;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05);
-}
+        /* Section Styling */
+        .section {
+            margin: 30px 0;
+            padding: 25px;
+            border-radius: 12px;
+            background: linear-gradient(145deg, #ffffff, #e6e6e6);
+            box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.1), -8px -8px 16px rgba(255, 255, 255, 0.7);
+        }
 
-.item {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-    padding: 15px;
-    border-radius: 8px;
-    transition: transform 0.2s, background-color 0.2s, box-shadow 0.2s;
-}
+        /* Item Card Styling */
+        .item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            padding: 15px;
+            border-radius: 10px;
+            background-color: #ffffff;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+            cursor: pointer;
+        }
 
-.item:hover {
-    transform: scale(1.02); /* Slight zoom effect on hover */
-    background-color: #f9f9f9; /* Light gray background on hover */
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow on hover */
-}
+        .item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+            background-color: #f7f7f7;
+        }
 
-.item img {
-    width: 100px;
-    height: auto;
-    margin-right: 15px;
-    border-radius: 8px;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-}
+        /* Image Styling */
+        .item img {
+            width: 120px;
+            height: auto;
+            margin-right: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
 
-.item-details {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-}
+        .item:hover img {
+            transform: scale(1.05);
+        }
 
-.price {
-    font-weight: bold;
-    color: #4CAF50;
-    font-size: 1.2em;
-}
+        /* Item Details and Price Styling */
+        .item-details {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
 
+        .item-details span {
+            font-size: 1.1em;
+            font-weight: bold;
+            color: #333;
+        }
 
+        .price {
+            font-weight: bold;
+            color: #2d6a4f;
+            font-size: 1.3em;
+        }
+
+        /* Section Header Styling */
+        h2 {
+            font-size: 2em;
+            color: #406709;
+            margin-bottom: 20px;
+            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 8px;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
@@ -78,7 +114,7 @@ h1 {
         <h2>Drinks</h2>
         <!-- Example Drink Item -->
         <div class="item">
-            <img src="img.jpg" alt="Drink 1"> <!-- Add your image source here -->
+            <img src="img.jpg" alt="Coffee"> <!-- Add your image source here -->
             <div class="item-details">
                 <span>Coffee</span>
                 <span class="price">MVR 3.00</span>
@@ -86,7 +122,7 @@ h1 {
         </div>
         <!-- Add more drink items below -->
         <div class="item">
-            <img src="img.jpg" alt="Drink 2"> <!-- Add your image source here -->
+            <img src="img.jpg" alt="Tea"> <!-- Add your image source here -->
             <div class="item-details">
                 <span>Tea</span>
                 <span class="price">MVR 2.50</span>
@@ -97,17 +133,15 @@ h1 {
     <!-- Pizza Section -->
     <div class="section" id="pizza">
         <h2>Pizza</h2>
-        <!-- Example Pizza Item -->
         <div class="item">
-            <img src="img.jpg" alt="Pizza 1"> <!-- Add your image source here -->
+            <img src="img.jpg" alt="Margherita Pizza"> <!-- Add your image source here -->
             <div class="item-details">
                 <span>Margherita Pizza</span>
                 <span class="price">MVR 8.00</span>
             </div>
         </div>
-        <!-- Add more pizza items below -->
         <div class="item">
-            <img src="img.jpg" alt="Pizza 2"> <!-- Add your image source here -->
+            <img src="img.jpg" alt="Pepperoni Pizza"> <!-- Add your image source here -->
             <div class="item-details">
                 <span>Pepperoni Pizza</span>
                 <span class="price">MVR 9.00</span>
@@ -118,15 +152,13 @@ h1 {
     <!-- Submarine Section -->
     <div class="section" id="submarine">
         <h2>Submarines</h2>
-        <!-- Example Submarine Item -->
         <div class="item">
             <img src="img.jpg" alt="Beef Submarine"> <!-- Add your image source here -->
             <div class="item-details">
-                <span>Beef submarine</span>
+                <span>Beef Submarine</span>
                 <span class="price">MVR 75.00</span>
             </div>
         </div>
-        <!-- Add more submarine items below -->
         <div class="item">
             <img src="img.jpg" alt="Chicken Submarine"> <!-- Add your image source here -->
             <div class="item-details">
@@ -136,10 +168,9 @@ h1 {
         </div>
     </div>
 
-    <!-- Add more sections below -->
-    <div class="section" id="new-section">
+    <!-- Hedhikaa Section -->
+    <div class="section" id="hedhikaa">
         <h2>Hedhikaa</h2>
-        <!-- Add items for new section here -->
         <div class="item">
             <img src="img.jpg" alt="Bis katulas"> <!-- Add your image source here -->
             <div class="item-details">
