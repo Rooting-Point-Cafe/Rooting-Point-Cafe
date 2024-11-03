@@ -44,8 +44,8 @@ h1 {
 
 .item:hover {
     transform: scale(1.02); /* hover zoom effect */
-    background-color: #f9f9f9; /* hover and get darker background */
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* hover on soft shadow */
+    background-color: #f9f9f9; /* hover darker background */
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* hover shadow */
 }
 
 .item img {
@@ -67,6 +67,19 @@ h1 {
     color: #4CAF50;
     font-size: 1.2em;
 }
+
+/* styling for phone view */
+@media (max-width: 600px) {
+    .item-details {
+        flex-direction: column; /* Stack item name and price vertically */
+        align-items: flex-start; /* Align to the left */
+    }
+
+    .price {
+        margin-top: 5px; /* Space between name and price */
+    }
+}
+
   </style>
  </head>
  <body>
